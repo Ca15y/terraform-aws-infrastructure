@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+crash.log
+crash.*.log
+
+# Sensitive variable files (may contain secrets)
+*.tfvars.secret
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
