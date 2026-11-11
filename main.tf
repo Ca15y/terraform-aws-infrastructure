@@ -6,8 +6,10 @@ terraform {
     }
   }
 
+  # The state bucket name is supplied at init time so it is not hardcoded here:
+  #   terraform init -backend-config=backend.hcl
+  # See backend.hcl.example.
   backend "s3" {
-    bucket = "devops-proj-2-tfstate-258227418586"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
